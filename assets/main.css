@@ -1,0 +1,54 @@
+/*
+COLOR PALETTE
+
+#990000
+#424242
+#EAE0C8
+#FA7921
+
+https://coolors.co/990000-424242-eae0c8-ceb992-fa7921
+
+#CEB992
+#D4AF37
+
+*/
+
+* {
+    color: hsl(0, 0%, 26%);
+    background-color: hsl(42, 45%, 85%);
+}
+
+h1 {
+    font-size: 4.6rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p {
+    font-size: 2.2rem;
+}
+
+.dark-red {
+    color: hsl(0, 100%, 30%);
+}
+
+.left-title {
+    display: flex;
+    justify-content: end;
+}
+
+.center-title {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-spaced-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
