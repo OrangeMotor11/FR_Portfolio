@@ -6,6 +6,7 @@ COLOR PALETTE
 #C9A789
 #ABC989
 #CC0033
+#89ABC9
 #898BC9
 
 #FF7518
@@ -106,6 +107,12 @@ a {
 
 .section-title {
     color: hsl(28, 37%, 66%);
+}
+
+.extra-info {
+    visibility: hidden;
+    font-size: 2.5rem;
+    color: hsl(208, 37%, 66%);
 }
 
 .navigation-bar {
