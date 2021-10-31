@@ -29,7 +29,7 @@ hsl(50, 85%, 55%)
     --background-dark-theme: hsl(30, 5%, 8%);
     --background-light-theme: hsl(34, 47%, 90%);
     --name-title-color: hsl(50, 85%, 55%);
-    --nickname-title-color: hsl(34, 47%, 90%);
+    --personal-phrase-title-color: hsl(34, 47%, 90%);
     --themify-icon-color: hsl(50, 85%, 55%);
     --language-color: hsl(50, 85%, 55%);
     --section-title-color: hsl(50, 85%, 55%);
@@ -115,8 +115,8 @@ a {
     color: var(--name-title-color);
 }
 
-.nickname-title {
-    color: var(--nickname-title-color);
+.personal-phrase-title {
+    color: var(--personal-phrase-title-color);
 }
 
 .section-title {
