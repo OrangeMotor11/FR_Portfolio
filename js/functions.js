@@ -51,7 +51,25 @@ const translate_to_spanish = () => {
     document.querySelector('#photo_editing').textContent = 'EDICIÓN DE FOTOS';
     // document.querySelector('#projects_title').textContent = 'PROYECTOS';
     document.querySelector('#contact_title').textContent = 'CONTACTO';
-    
+}
+
+const translate_to_english = () => {
+    document.querySelector('#english_selector').classList.add('active-language');
+    document.querySelector('#english_selector').classList.remove('hoverable-item');
+    document.querySelector('#spanish_selector').classList.remove('active-language');
+    document.querySelector('#spanish_selector').classList.add('hoverable-item');
+
+    document.querySelector('#personal_phrase').textContent = "«THE POWER OF ONE»";
+    document.querySelector('#personal-phrase-explanation').textContent = '';
+    document.querySelector('#personal-phrase-explanation').insertAdjacentHTML('afterbegin', '<b class="red-text">CHRIST</b> FOLLOWER<br>I SEEK TO LET <b class="red-text">GOD’S</b> LIGHT WITHIN ME<br>SHINE BEFORE MY FELLOWS TO IGNITE THEIR <b class="red-text">SPIRIT</b>S<br><b class="red-text">ONE</b> CAN CHANGE EVERYTHING');
+    document.querySelector('#languages_title').textContent = 'LANGUAGES';
+    document.querySelector('#spanish_language').textContent = 'SPANISH';
+    document.querySelector('#english_language').textContent = 'ENGLISH';
+    document.querySelector('#skills_title').textContent = 'SKILLS';
+    document.querySelector('#software_development').textContent = 'SOFTWARE DEVELOPMENT';
+    document.querySelector('#photo_editing').textContent = 'PHOTO EDITING';
+    // document.querySelector('#projects_title').textContent = 'PROJECTS';
+    document.querySelector('#contact_title').textContent = 'CONTACT';
 }
 
 
