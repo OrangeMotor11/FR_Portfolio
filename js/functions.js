@@ -1,3 +1,26 @@
+// SCROLLING
+
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+    let reveals =document.querySelectorAll('.reveal');
+
+    for (let i = 0; i < reveals.length; i++) {
+        
+        let window_height =  window.innerHeight;
+        let reveal_top = reveals[i].getBoundingClientRect().top;
+        let reveal_point = 150;
+
+        if (reveal_top < window_height - reveal_point) {
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+
 // LANGUAGES
 
 const show_language_info = (...args) => {
