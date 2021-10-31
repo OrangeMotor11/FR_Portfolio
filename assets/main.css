@@ -74,9 +74,12 @@ a {
     color: inherit;
 }
 
-.fa-color {
+.theme-icon {
     color: hsl(28, 37%, 66%);
-    color: hsl(238, 37%, 66%);
+}
+
+.hoverable-item:hover {
+    color: hsl(88, 37%, 66%);
 }
 
 .red-text {
@@ -93,12 +96,16 @@ a {
     justify-content: center;
 }
 
-.section-title {
+.name-title {
     color: hsl(28, 37%, 66%);
 }
 
-.section-item:hover {
+.nickname-title {
     color: hsl(88, 37%, 66%);
+}
+
+.section-title {
+    color: hsl(28, 37%, 66%);
 }
 
 .navigation-bar {
@@ -124,10 +131,10 @@ a {
     justify-content: flex-end;
     gap: 1rem;
     position: sticky;
-    top: 1rem;
-    margin-top: 1rem;
-    margin-right: 2rem;
-    height: 1rem;
+    padding: 1rem;
+    top: 0rem;
+    height: 2.5rem;
+    background-color: hsl(30, 6%, 14%);
 }
 
 .themify {
@@ -144,7 +151,7 @@ a {
 }
 
 .full-vh {
-    height: 100vh;
+    height: 90vh;
 }
 
 .half-vh {
@@ -174,5 +181,5 @@ a {
 
 .my-photo {
     grid-row: 1 / 3;
-    width: 40vw;
+    width: 45vw;
 }
