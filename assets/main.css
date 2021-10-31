@@ -32,8 +32,7 @@ hsl(50, 85%, 55%)
     --language-color: hsl(50, 85%, 55%);
     --section-title-color: hsl(50, 85%, 55%);
     --hoverable-item-color: hsl(29, 85%, 55%);
-    /* --extra-info-color: hsl(22, 100%, 35%); */
-    --extra-info-color: hsl(202, 52%, 62%);
+    --extra-info-color: hsl(206, 98%, 17%);
     --scrollbar-color: hsl(50, 85%, 55%);
     --transition-speed: 600ms;
 }
