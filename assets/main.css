@@ -253,12 +253,12 @@ button{
         height: 40vh;
     }
 
-    .grid-spaced-evenly {
+    /* .grid-spaced-evenly {
         display: grid !important;
         justify-content: space-evenly !important;
         justify-items: center !important;
         gap: 1rem !important;
-    }
+    } */
 
     .full-vh {
         height: 75vh;
