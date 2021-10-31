@@ -9,28 +9,38 @@ COLOR PALETTE
 #89ABC9
 #898BC9
 
-#FF7518
-#990000
+NEW
+#260101
+hsl(30, 6%, 10%)
+#FBF8F4
+hsl(50, 85%, 55%)
+#F2EC9B
+#F2B66D
+#592202
+#CC0033
 
 */
 
 :root {
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
-    --text-primary: hsl(0, 0%, 26%);
-    --text-secondary: hsl(42, 45%, 85%);
-    --background-primary: hsl(0, 0%, 26%);
-    --background-primary-darker: hsl(0, 0%, 16%);
-    --background-primary-lighter: hsl(0, 0%, 36%);
-    --background-secondary: hsl(42, 45%, 85%);
+    --text-dark-theme: hsl(34, 47%, 97%);
+    --background-dark-theme: hsl(30, 5%, 8%);
+    --name-title-color: hsl(50, 85%, 55%);
+    --nickname-title-color: hsl(29, 85%, 55%);
+    --themify-icon-color: hsl(50, 85%, 55%);
+    --language-color: hsl(50, 85%, 55%);
+    --section-title-color: hsl(50, 85%, 55%);
+    --hoverable-item-color: hsl(29, 85%, 55%);
+    --extra-info-color: hsl(22, 100%, 35%);
+    --scrollbar-color: hsl(50, 85%, 55%);
     --transition-speed: 600ms;
 }
 
 body {
-    color: hsl(30, 6%, 14%);
-    color: hsl(34, 47%, 97%);
-    background-color: hsl(34, 47%, 97%);
-    background-color: hsl(30, 6%, 14%);
+    position: relative;
+    color: var(--text-dark-theme);
+    background-color: var(--background-dark-theme);
     margin: 0;
     padding: 0;
 }
@@ -40,12 +50,11 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-track{
-    background-color: hsl(34, 47%, 97%);
-    background-color: hsl(30, 6%, 14%);
+    background-color: var(--background-dark-theme);
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color: hsl(28, 37%, 66%);
+    background-color: var(--scrollbar-color);
 }
 
 main {
@@ -76,11 +85,11 @@ a {
 }
 
 .theme-icon {
-    color: hsl(28, 37%, 66%);
+    color: var(--themify-icon-color);
 }
 
 .hoverable-item:hover {
-    color: hsl(88, 37%, 66%);
+    color: var(--hoverable-item-color);
 }
 
 .red-text {
@@ -98,21 +107,21 @@ a {
 }
 
 .name-title {
-    color: hsl(28, 37%, 66%);
+    color: var(--name-title-color);
 }
 
 .nickname-title {
-    color: hsl(88, 37%, 66%);
+    color: var(--nickname-title-color);
 }
 
 .section-title {
-    color: hsl(28, 37%, 66%);
+    color: var(--section-title-color);
 }
 
 .extra-info {
     visibility: hidden;
     font-size: 2.5rem;
-    color: hsl(208, 37%, 66%);
+    color: var(--extra-info-color);
 }
 
 .navigation-bar {
@@ -141,7 +150,7 @@ a {
     padding: 1rem;
     top: 0rem;
     height: 2.5rem;
-    background-color: hsl(30, 6%, 14%);
+    background-color: transparent;
 }
 
 .themify {
@@ -149,7 +158,7 @@ a {
 }
 
 .active-language {
-    color: hsl(28, 37%, 66%);
+    color: var(--themify-icon-color);
 }   
 
 .flex-spaced-evenly {
@@ -158,7 +167,7 @@ a {
 }
 
 .full-vh {
-    height: 90vh;
+    height: 100vh;
 }
 
 .half-vh {
