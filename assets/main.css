@@ -89,6 +89,12 @@ a {
     color: inherit;
 }
 
+button{
+    color: inherit;
+    background-color: transparent;
+    border: 0;
+}
+
 .theme-icon {
     color: var(--themify-icon-color);
 }
@@ -156,6 +162,7 @@ a {
     top: 0rem;
     height: 2.5rem;
     background-color: transparent;
+    z-index: 3;
 }
 
 .themify {
