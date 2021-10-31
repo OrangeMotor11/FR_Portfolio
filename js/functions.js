@@ -107,28 +107,28 @@ function load() {
     
     spanish_language.addEventListener('mouseenter', function() {
         if (spanish_selector.classList.contains('active-language')) {
-        show_language_info("NATIVO", "visible")
+            show_language_info("NATIVO", "visible");
         }
         else{
-            show_language_info("NATIVE", "visible")
+            show_language_info("NATIVE", "visible");
         }
     }, false);
     
     spanish_language.addEventListener('mouseleave', function() {
-        hide_language_info("", "hidden")
+        hide_language_info("", "hidden");
     }, false);
 
     let english_language = document.querySelector("#english_language");
     english_language.addEventListener('mouseenter', function() {
         if (english_selector.classList.contains('active-language')) {
-            show_language_info("ADVANCED", "visible")
+            show_language_info("ADVANCED", "visible");
         }
         else{
-            show_language_info("AVANZADO", "visible")
+            show_language_info("AVANZADO", "visible");
         }
     }, false);
     english_language.addEventListener('mouseleave', function() {
-        hide_language_info("", "hidden")
+        hide_language_info("", "hidden");
     }, false);
 
     // LANGUAGES FOR MOBILE
@@ -138,7 +138,7 @@ function load() {
         if (spanish_language.classList.contains('selected-language')) {
             spanish_language.classList.remove('selected-language');
             document.querySelector("#spanish_language").style["color"] = "hsl(34, 47%, 90%)";
-            hide_language_info("", "hidden")
+            hide_language_info("", "hidden");
         }
         else{
             document.querySelector("#spanish_language").style["color"] = "hsl(29, 85%, 55%)";
@@ -146,10 +146,10 @@ function load() {
             english_language.classList.remove('selected-language');
             spanish_language.classList.add('selected-language');
             if (spanish_selector.classList.contains('active-language')) {
-                show_language_info("NATIVO", "visible")
+                show_language_info("NATIVO", "visible");
             }
             else{
-                show_language_info("NATIVE", "visible")
+                show_language_info("NATIVE", "visible");
             }
         }
 
@@ -160,7 +160,7 @@ function load() {
         if (english_language.classList.contains('selected-language')) {
             english_language.classList.remove('selected-language');
             document.querySelector("#english_language").style["color"] = "hsl(34, 47%, 90%)";
-            hide_language_info("", "hidden")
+            hide_language_info("", "hidden");
         }
         else{
             document.querySelector("#english_language").style["color"] = "hsl(29, 85%, 55%)";
@@ -168,10 +168,10 @@ function load() {
             spanish_language.classList.remove('selected-language');
             english_language.classList.add('selected-language');
             if (english_selector.classList.contains('active-language')) {
-                show_language_info("ADVANCED", "visible")
+                show_language_info("ADVANCED", "visible");
             }
             else{
-                show_language_info("AVANZADO", "visible")
+                show_language_info("AVANZADO", "visible");
             }
         }
 
@@ -180,32 +180,35 @@ function load() {
     // SKILLS
     let software_development = document.querySelector("#software_development");
     software_development.addEventListener('mouseenter', function() {
-        show_skill_info(["HTML", "CSS", "JS", "PYTHON", "GIT", "SQL"], "visible")
+        show_skill_info(["HTML", "CSS", "JS", "PYTHON", "GIT", "SQL"], "visible");
     }, false);
     software_development.addEventListener('mouseleave', function() {
-        hide_skill_info("", "hidden")
+        hide_skill_info("", "hidden");
     }, false);
 
     let photo_editing = document.querySelector("#photo_editing");
     photo_editing.addEventListener('mouseenter', function() {
-        show_skill_info(["PHOTOSHOP CS6", "GIMP"], "visible")
+        show_skill_info(["PHOTOSHOP CS6", "GIMP"], "visible");
     }, false);
     photo_editing.addEventListener('mouseleave', function() {
-        hide_skill_info("", "hidden")
+        hide_skill_info("", "hidden");
     }, false);
+
+    // SKILLS FOR MOBILE
 
     software_development.addEventListener('touchstart', function() {
 
         if (software_development.classList.contains('selected-skill')) {
             software_development.classList.remove('selected-skill');
             document.querySelector("#software_development").style["color"] = "hsl(34, 47%, 90%)";
-            hide_language_info("", "hidden")
+            hide_skill_info("", "hidden");
         }
         else{
             document.querySelector("#software_development").style["color"] = "hsl(29, 85%, 55%)";
             document.querySelector("#photo_editing").style["color"] = "hsl(34, 47%, 90%)";
             photo_editing.classList.remove('selected-skill');
             software_development.classList.add('selected-skill');
+            show_skill_info(["HTML", "CSS", "JS", "PYTHON", "GIT", "SQL"], "visible");
         }
 
     }, false);
@@ -215,13 +218,14 @@ function load() {
         if (photo_editing.classList.contains('selected-skill')) {
             photo_editing.classList.remove('selected-skill');
             document.querySelector("#photo_editing").style["color"] = "hsl(34, 47%, 90%)";
-            hide_language_info("", "hidden")
+            hide_skill_info("", "hidden");
         }
         else{
             document.querySelector("#photo_editing").style["color"] = "hsl(29, 85%, 55%)";
             document.querySelector("#software_development").style["color"] = "hsl(34, 47%, 90%)";
             software_development.classList.remove('selected-skill');
             photo_editing.classList.add('selected-skill');
+            show_skill_info(["PHOTOSHOP CS6", "GIMP"], "visible");
         }
 
     }, false);
