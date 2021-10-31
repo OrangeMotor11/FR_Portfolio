@@ -131,6 +131,52 @@ function load() {
         hide_language_info("", "hidden")
     }, false);
 
+    // LANGUAGES FOR MOBILE
+
+    spanish_language.addEventListener('touchstart', function() {
+
+        if (spanish_language.classList.contains('selected-language')) {
+            spanish_language.classList.remove('selected-language');
+            document.querySelector("#spanish_language").style["color"] = "hsl(34, 47%, 90%)";
+            hide_language_info("", "hidden")
+        }
+        else{
+            document.querySelector("#spanish_language").style["color"] = "hsl(29, 85%, 55%)";
+            document.querySelector("#english_language").style["color"] = "hsl(34, 47%, 90%)";
+            english_language.classList.remove('selected-language');
+            spanish_language.classList.add('selected-language');
+            if (spanish_selector.classList.contains('active-language')) {
+                show_language_info("NATIVO", "visible")
+            }
+            else{
+                show_language_info("NATIVE", "visible")
+            }
+        }
+
+    }, false);
+
+    english_language.addEventListener('touchstart', function() {
+
+        if (english_language.classList.contains('selected-language')) {
+            english_language.classList.remove('selected-language');
+            document.querySelector("#english_language").style["color"] = "hsl(34, 47%, 90%)";
+            hide_language_info("", "hidden")
+        }
+        else{
+            document.querySelector("#english_language").style["color"] = "hsl(29, 85%, 55%)";
+            document.querySelector("#spanish_language").style["color"] = "hsl(34, 47%, 90%)";
+            spanish_language.classList.remove('selected-language');
+            english_language.classList.add('selected-language');
+            if (english_selector.classList.contains('active-language')) {
+                show_language_info("NATIVO", "visible")
+            }
+            else{
+                show_language_info("NATIVE", "visible")
+            }
+        }
+
+    }, false);
+
     // SKILLS
     let software_development = document.querySelector("#software_development");
     software_development.addEventListener('mouseenter', function() {
