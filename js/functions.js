@@ -168,10 +168,10 @@ function load() {
             spanish_language.classList.remove('selected-language');
             english_language.classList.add('selected-language');
             if (english_selector.classList.contains('active-language')) {
-                show_language_info("NATIVO", "visible")
+                show_language_info("ADVANCED", "visible")
             }
             else{
-                show_language_info("NATIVE", "visible")
+                show_language_info("AVANZADO", "visible")
             }
         }
 
@@ -192,6 +192,38 @@ function load() {
     }, false);
     photo_editing.addEventListener('mouseleave', function() {
         hide_skill_info("", "hidden")
+    }, false);
+
+    software_development.addEventListener('touchstart', function() {
+
+        if (software_development.classList.contains('selected-skill')) {
+            software_development.classList.remove('selected-skill');
+            document.querySelector("#software_development").style["color"] = "hsl(34, 47%, 90%)";
+            hide_language_info("", "hidden")
+        }
+        else{
+            document.querySelector("#software_development").style["color"] = "hsl(29, 85%, 55%)";
+            document.querySelector("#photo_editing").style["color"] = "hsl(34, 47%, 90%)";
+            photo_editing.classList.remove('selected-skill');
+            software_development.classList.add('selected-skill');
+        }
+
+    }, false);
+
+    photo_editing.addEventListener('touchstart', function() {
+
+        if (photo_editing.classList.contains('selected-skill')) {
+            photo_editing.classList.remove('selected-skill');
+            document.querySelector("#photo_editing").style["color"] = "hsl(34, 47%, 90%)";
+            hide_language_info("", "hidden")
+        }
+        else{
+            document.querySelector("#photo_editing").style["color"] = "hsl(29, 85%, 55%)";
+            document.querySelector("#software_development").style["color"] = "hsl(34, 47%, 90%)";
+            software_development.classList.remove('selected-skill');
+            photo_editing.classList.add('selected-skill');
+        }
+
     }, false);
 }
 
