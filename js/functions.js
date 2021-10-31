@@ -77,13 +77,18 @@ const translate_to_english = () => {
 
 const show_skill_info = (...args) => {
 
-    for (let i = 0; i < args[0].length; i++) {
-        let skill_item = document.createElement("p"); 
-        skill_item.appendChild(document.createTextNode(args[0][i]))
-        document.querySelector("#skill_extra_info").appendChild(skill_item);
+    if (!document.querySelector("#skill_extra_info").firstChild) {
+        
+        for (let i = 0; i < args[0].length; i++) {
+            let skill_item = document.createElement("p"); 
+            skill_item.appendChild(document.createTextNode(args[0][i]))
+            document.querySelector("#skill_extra_info").appendChild(skill_item);
+        }
+    
+        document.querySelector("#skill_extra_info").style["visibility"] = args[1];
+        
     }
 
-    document.querySelector("#skill_extra_info").style["visibility"] = args[1];
 }
 
 const hide_skill_info = (...args) => {
