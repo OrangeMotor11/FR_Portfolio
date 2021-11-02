@@ -263,7 +263,7 @@ button{
 
 }
 
-@media (orientation:landscape) and (min-width: 600px) and  (max-width: 1500px) {
+@media (orientation:landscape) and (min-width: 600px) and  (max-width: 1000px) {
     main {
         margin-left: 1rem;
         margin-right: 1rem;
